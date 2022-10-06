@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Play", sans-serif;
+  min-height: 100vh;
+  background: url("img/bg5.jpg");
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  min-width: 400px;
+  background: #fbf2cf;
+  border-radius: 38px;
+  text-align: center;
+  position: relative;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  height: 110%;
+  width: 110%;
+  left: -5%;
+  top: -5%;
+  background-color: rgba(90, 44, 44, 0.6);
+  box-shadow: 10px 16px 42px 0px rgba(73, 32, 32, 0.75);
+  -webkit-box-shadow: 10px 16px 42px 0px rgba(73, 32, 32, 0.75);
+  -moz-box-shadow: 10px 16px 42px 0px rgba(73, 32, 32, 0.75);
+  border-radius: 60px;
+  z-index: -1;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 36px;
+  padding: 30px 0;
+}
+.content {
+  padding: 0 40px;
+}
+.input {
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 28px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.input label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+.input input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4f7df9;
+  width: 60%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Play", sans-serif;
+}
+button#calculate {
+  font-family: "Play", sans-serif;
+  color: #fff;
+  background: #bd2525;
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 15px 0;
+  width: 50%;
+  outline: none;
+  border: none;
+  transition: background 0.2s ease;
+}
+button#calculate:hover {
+  background: tomato;
+}
+.result {
+  padding: 30px 20px;
+}
+.result p {
+  font-weight: 600;
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 15px;
+}
+.result #result {
+  font-size: 36px;
+  font-weight: 900;
+  color: white;
+  background-color: #7d8570;
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 55px;
+  margin-bottom: 25px;
+}
+#comment {
+  color: #4f7df9;
+  font-weight: 800;
+}
