@@ -112,3 +112,16 @@ button#calculate:hover {
   color: #4f7df9;
   font-weight: 800;
 }
+
+@media screen and (max-width: 768px) {
+  .box {
+    min-width: 300px;
+  }
+  .input input {
+    width: 80%;
+  }
+  button#calculate {
+    width: 70%;
+  }
+}
+  
