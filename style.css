@@ -124,4 +124,28 @@ button#calculate:hover {
     width: 70%;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .box {
+    min-width: 250px;
+  }
+  .input input {
+    width: 90%;
+  }
+  button#calculate {
+    width: 80%;
+  }
+}
+  
+@media screen and (max-width: 320px) {
+  .box {
+    min-width: 200px;
+  }
+  .input input {
+    width: 100%;
+  }
+  button#calculate {
+    width: 90%;
+  }
+}
   
